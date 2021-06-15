@@ -14,6 +14,10 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  font-size: 93,75%; /*15px*/
+}
+
 
 /*Trick para manter um elemento na tela e sumir com ele
 para leitores de tela
@@ -113,7 +117,15 @@ background: #49aa26;
 color: white;
 }
 
-/* ===== Footer ===== */
+
+
+/* ===== Tabela ===== */
+#transaction{
+  display: block;
+  width: 100%;
+  overflow-x: auto; /*Rolagem no mouse*/
+}
+
 #data-table {
   width: 100%;
   border-spacing: 0 0.5rem;
@@ -135,6 +147,7 @@ table tbody tr td:last-child{
 /*----------------------------------------------*/
 
 table th {
+
   background: white;
   font-weight: normal;
   padding: 1rem 2rem;
@@ -166,6 +179,32 @@ td.income {
 td.expense {
   color: #e92929;
 }
+/* ===== Modal =====  Caixa que aparece (tricks)*/
+.modal-overlay { /*caixa preta com transparencia */
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+
+}
+
+.modal {
+  background: #f0f2f5;
+}
 
 /* ===== Footer ===== */
 footer {
@@ -174,4 +213,18 @@ footer {
   color: var(--dark-blue);
 
   opacity: 0.6;
+}
+
+/* ===== Responsividade ===== */
+
+@media (min-width: 800px) {
+  html{
+    font-size: 87.5%;
+  }
+
+  #balance {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 }
