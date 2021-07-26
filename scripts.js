@@ -12,19 +12,19 @@ const transactions = [
   {
     id: 1,
     description: 'luz',
-    amount: -50000,
+    amount: -123400,
     date: '23/01/2021',
   },
   {
     id: 2,
     description: 'internet',
-    amount: 50000,
+    amount: -689452,
     date: '23/01/2021',
   },
   {
     id: 3,
-    description: 'força',
-    amount: -20000,
+    description: 'PUTA',
+    amount: 84621,
     date: '23/01/2021',
   },
 ]
@@ -56,10 +56,11 @@ const DOM = {
     //Operação para verificar se positivo ou negativo o lançamento
     const CSSclass = transaction.amount > 0 ? "income" : "expense";
 
+    const amount = Utils.formatCurrency(transaction.amount);
     //
     const html = `
         <td class="description">${transaction.description}</td>
-        <td class="${CSSclass}">${transaction.amount}</td>
+        <td class="${CSSclass}">${amount}</td>
         <td class="date">${transaction.date}</td>
         <th>
             <img src="./assets/minus.svg" 
@@ -73,9 +74,17 @@ const DOM = {
 
 const Utils = {
     formatCurrency(value) {
-      const signal = number(value) < 0 ? "-" : " ";
+      const signal = Number(value) < 0 ? "-" : "";
 
-      value = String(value).replace()
+      value = String(value).replace(/\D/g, "");
+
+      value = Number(value) / 100;
+
+      value = value.toLocaleString("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+      });
+      return signal + value;
     }
 }
 
