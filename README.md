@@ -18,13 +18,14 @@ Tabela de conteúdos
    * Como executar o projeto
    * Tecnologias
    * Como contribuir no projeto
+   * Proximas melhorias
    * Licença
    
 <!--te-->
 
 
 ## 💻 Sobre o projeto
-  O projeto tem como objetivo aprimorar conhecimentos em React.
+  O projeto tem como objetivo aprimorar conhecimentos em HTML5 | CSS3 | JAVASCRIPT.
   Construção do front-end em React.js, consultando uma api para requisições de dados sobre o clima dos próximos 3 dias.
   A ferramenta contem um campo de texto para informar o nome cidade da busca e realizar a consulta dos dados.
   
@@ -37,8 +38,7 @@ Tabela de conteúdos
   Projeto simples:
   
   1. Fazer um git clone;
-  2. Abrir o projeto pelo VSCode e abrir o terminal e rodar o comando yarn para download das dependências;
-  3. Executar o comando  no terminal do VScode com o projeto aberto ou pelo cmd dentro do projeto rodar o comando "Yarn run dev";
+  2. Abrir o projeto pelo VSCode e executar o arquivo index.html;
 
 ---
 
@@ -49,11 +49,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - HTML5;
 - CSS3;
 - JavaScript;
-- React.js
-- JSX;
-- Requisições HTTP p/ consumir dados;
-- Realizar chamada à API [WeatherApi](https://github.com/robertoduessmann/weather-api);
-- Utilizando o [Vite](https://vitejs.dev/guide/) para iniciar o projeto React.
 
 ---
 
@@ -65,7 +60,12 @@ As seguintes ferramentas foram usadas na construção do projeto:
 4. Envie as suas alterações: `git push origin my-feature`
 
 ---
- 
+## 📌 Proximas melhorias
+
+1. Criar um grafico de pizza para entradas e saidas, com o intuito de mostrar a parcela de contribuição de cada entrada ou gasto no montante total do mês.
+
+---
+
 ## 📝 Licença
 <div align="center">
 Este projeto esta sobe a licença [MIT](./LICENSE).
