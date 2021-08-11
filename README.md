@@ -29,10 +29,11 @@ Tabela de conteúdos
   Construção do front-end de um app onde você possa controlar suas finanças.
   O app tem a opção de entrada e exclusão de dados, que são salvos no localstorage, e faz por final o balanço dos valores.
   
-  
-  <img align="right" width="600" height="400" src="https://user-images.githubusercontent.com/28414038/126520297-546e4e99-d39c-41f4-9408-079d98a8945f.jpeg">
+ <img align="right" width="1000" height="600" src="https://user-images.githubusercontent.com/28414038/129084100-f1647be5-0d8d-4e26-80b3-1e3ccd373fbd.gif">
+ <br>
  
 ---
+
 
 ## 🚀 Como executar o projeto
   Projeto simples:
